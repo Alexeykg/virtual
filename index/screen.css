@@ -1,0 +1,267 @@
+
+#games #games-list > div {
+    margin-bottom: 25px;
+    position: relative;
+}
+#navigation {
+    background: #383732 none repeat scroll 0 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#navigation .phone {
+    font-size: 20px;
+    line-height: 45px;
+    vertical-align: middle;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+#navigation .phone {
+    display: none;
+}
+}
+#navigation ul.menu {
+    margin: 0;
+    padding: 0;
+}
+#navigation ul.menu li {
+    display: inline-block;
+}
+#navigation ul.menu li a {
+    border-bottom: 4px inset transparent;
+    color: whitesmoke;
+    display: block;
+    font-size: 18px;
+    padding: 10px 10px 7px;
+    transition: all 0.2s ease 0s;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+#navigation ul.menu li a {
+    font-size: 14px;
+}
+}
+#navigation ul.menu li a:hover, #navigation ul.menu li a:active, #navigation ul.menu li a.selected {
+    border-bottom: 4px inset #3498db;
+    text-decoration: none;
+}
+header {
+    background: rgba(0, 0, 0, 0) url("img/img_bg.jpg") no-repeat fixed 50% 0;
+    color: whitesmoke;
+    height: 500px;
+    min-height: 600px;
+    padding-top: 40px;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+header {
+    min-height: 200px;
+}
+}
+header .adress {
+    margin-top: 151px;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+header .adress {
+    margin-top: 151px;
+}
+}
+footer {
+    min-height: 30px;
+}
+.part {
+    min-height: 400px;
+    padding: 20px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+.part {
+    min-height: 200px;
+    overflow: hidden;
+}
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+.part {
+    overflow: hidden;
+}
+}
+.bg-gray {
+    background: #383732 none repeat scroll 0 0;
+    color: whitesmoke;
+}
+.brand-top {
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    max-width: 100%;
+    padding: 0 10px;
+    position: relative;
+    width: 490px;
+}
+.brand-top h1 {
+    font-size: 60px;
+    line-height: 100px;
+    margin: 50px 0 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+.brand-top h1 {
+    font-size: 35px;
+}
+}
+.brand-top::after {
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 0;
+}
+.brand-top::before {
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 0;
+    left: -100px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.brand-sub {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    height: 30px;
+    margin-left: 0px;
+    max-width: 100%;
+    padding: 0 10px;
+    position: relative;
+    width: 466px;
+	margin-top:110px;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+.brand-sub {
+    margin-left: 0;
+}
+}
+.brand-sub h4 {
+    line-height: 30px;
+    margin: 0;
+}
+.brand-sub::after {
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgba(0, 0, 0, 0.7);
+    border-top: 0 solid transparent;
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 0;
+}
+.brand-sub::before {
+    border-bottom: 0 solid transparent;
+    border-right: 30px solid rgba(0, 0, 0, 0.7);
+    border-top: 30px solid transparent;
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 0;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.glyphicon {
+    font-size: 0.8em;
+    margin-right: 5px;
+    vertical-align: baseline;
+}
+#map iframe {
+    max-width: 100%;
+}
+.animated {
+    transition: all 0.5s ease 0s;
+}
+.animated.from-bottom {
+    opacity: 0;
+    transform: translate3d(0px, 300px, 0px);
+}
+.animated.from-left {
+    opacity: 0;
+    transform: translate3d(-300px, 0px, 0px);
+}
+.animated.from-right {
+    opacity: 0;
+    transform: translate3d(300px, 0px, 0px);
+}
+.animation-start .from-bottom, .animation-start .from-left, .animation-start .from-right {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.video-link {
+    color: whitesmoke;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+}
+.video-link::after {
+    border: 12px solid white;
+    border-radius: 69px;
+    color: whitesmoke;
+    content: "";
+    font-size: 47px;
+    left: 68px;
+    opacity: 0;
+    padding: 21px;
+    position: absolute;
+    top: -45px;
+    transform: scale3d(1.5, 1.5, 1.25);
+    transition: all 0.4s ease 0s;
+}
+.video-link:hover::after {
+    opacity: 1;
+    transform: scale3d(1, 1, 1.25);
+}
+.video-link:hover .game-poster {
+    opacity: 1;
+}
+.video-link .game-poster {
+    max-width: 100%;
+    opacity: 0.8;
+    transition: all 0.2s ease 0s;
+}
+#htc, #contacts {
+    background: #383732 url("/img/bg2.png") no-repeat scroll 150% 50%;
+}
+#about, #games {
+    background: #fff url("/img/bg2.png") no-repeat scroll 150% 50%;
+}
+#htc, #contacts, #about, #games {
+    transition: all 0.2s ease 0s;
+}
+#htc.animation-start, #contacts.animation-start, #about.animation-start, #games.animation-start {
+    background-position: 100% 50%;
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+.page-header {
+    margin-top: 0;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+.post-image {
+    float: left;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.post-image img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+}
+.uptolike-buttons {
+    margin-left: 20px;
+    margin-top: 5px;
+}
